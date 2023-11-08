@@ -36,7 +36,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 22px;
+  font-size: 22px;    /* не знаю какой размер ставить по умолчанию  */
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
@@ -102,6 +102,8 @@ body {
 .advantages-top {
   background-color: inherit;
 }
+
+/* добавил в следующий класс цвет текста чёрный,но теперь возник вопрос,что делать с теми тегами,где цвет текста белый,я добавил ниже у item-1,7 белый цвет,но это получается цвет самого текста,а не заголовка:(*/
 .advantages-title {
   font-size: 24px;
   font-weight: 700;
@@ -114,7 +116,7 @@ body {
 .advantages-card {
   background-color: #82B3D3;
 }
-
+/* Не понял что делать с разными бекграунд колорами :(  и дальше добавил куча классов,мне кажется туфта*/
 .advantages-item-3,
 .advantages-item-5 {
   color: inherit;
@@ -178,6 +180,20 @@ li.advantages-item-10 {
 font-size: 18px;
 line-height: 24px;
 }
+
+.subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
 /* main END */
 
 /* footer START */
@@ -239,3 +255,79 @@ list-style: none;
   line-height: 24px;
 }
 /* catalog END */
+
+/* selection START */
+.number-hotels {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21;
+}
+/* selection END */
+
+/* hotels START */
+.hotels-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotels-card-link {
+  text-decoration: none;
+}
+
+.hotels-card-type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotels-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  /* text-align: right; неудобно смотреть */
+}
+
+.hotels-card-rating {
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+/* text-align: center;  неудобно*/
+}
+
+/* hotels END */
+
+/* pagination START */
+.pagination-link {
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+text-decoration: none;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.subscribe-catalog {
+  background-color: #FFFFFF;
+}
+.subscribe-catalog .subscribe-text {
+  color: #333333;
+}
+
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-input  {
+  background-color: #F2F2F2;
+}
+/* pagination END */
