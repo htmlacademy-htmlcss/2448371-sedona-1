@@ -271,6 +271,10 @@ list-style: none;
   width: 140px;
   height: 36px;
   display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;  /* текст в центр не встает*/
 }
 
 .hotels-card-title {
