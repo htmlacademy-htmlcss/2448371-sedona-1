@@ -4,7 +4,7 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
- font-display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
- font-display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -49,9 +49,7 @@ body {
   list-style: none;
 }
 
-.navigation-link-current{
-border-bottom: 2px solid #756257;
-}
+
 
 .navigation-link,
 .navigation-user-link {
@@ -64,6 +62,9 @@ border-bottom: 2px solid #756257;
   text-decoration: none;
 }
 
+.navigation-link-current{
+  border-bottom: 2px solid #756257;
+  }
 
 
 /* header END */
@@ -152,6 +153,7 @@ border-bottom: 2px solid #756257;
   font-weight: 700;
   font-family: "PT Sans", sans-serif;
   border-radius: 4px;
+  border: none;
 }
 
 .button-brown {
@@ -160,7 +162,10 @@ border-bottom: 2px solid #756257;
 
 .button-blue {
   background-color: #82B3D3;
-  border: none;
+}
+
+.button-green {
+  background-color: #7DB54F;
 }
 
 .subscribe {
@@ -170,8 +175,8 @@ border-bottom: 2px solid #756257;
 }
 
 .subscribe-form input {
-font-size: 18px;
-line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .subscribe-title {
@@ -204,7 +209,7 @@ line-height: 24px;
 .block-filter {
   background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
-background-size: cover;
+  background-size: cover;
   color: #FFFFFF  ;
 }
 
@@ -227,7 +232,7 @@ background-size: cover;
 }
 
 .catalog-filter-list {
-list-style: none;
+  list-style: none;
 }
 
 .catalog-filter-titel {
@@ -288,11 +293,6 @@ list-style: none;
   text-decoration: none;
 }
 
-.button-green {
-  background-color: #7DB54F;
-  border: none;
-}
-
 .hotels-card-type {
   font-size: 18px;
   line-height: 21px;
@@ -305,9 +305,9 @@ list-style: none;
 }
 
 .hotels-card-rating {
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 /* text-align: center;  неудобно*/
 }
 
@@ -315,14 +315,14 @@ text-transform: uppercase;
 
 /* pagination START */
 .pagination-link {
-font-size: 20px;
-line-height: 36px;
-font-weight: 700;
-text-transform: uppercase;
-text-align: center;
-text-decoration: none;
-background-color: #82B3D3;
-color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .pagination-current {
