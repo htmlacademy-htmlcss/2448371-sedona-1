@@ -36,7 +36,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 22px;    /* не знаю какой размер ставить по умолчанию  */
+  font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
@@ -44,10 +44,13 @@ body {
 
 
 /* header START */
-.index-header {
-}
+
 .navigation-list {
   list-style: none;
+}
+
+.navigation-link-current{
+border-bottom: 2px solid #756257;
 }
 
 .navigation-link,
@@ -66,22 +69,14 @@ body {
 /* header END */
 
 /* main START */
-.main-index {
 
-  background-image: url("../images/background-index.jpg");
-  background-color: #ffffff;
-  color: #000000;
+.main-intro {
+  background:  url(../images/index-ladder.svg) bottom, url(../images/background-index.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  /* text-align: center; */
-}
-
-.index-background {
-  background-image: url("../images/index-ladder.svg");
-  background-position-y: bottom;
-  background-repeat: no-repeat;
   height: 485px;
   text-align: center;
+  color: #000000;
 }
 
 .tagline-title {
@@ -103,34 +98,29 @@ body {
   background-color: inherit;
 }
 
-/* добавил в следующий класс цвет текста чёрный,но теперь возник вопрос,что делать с теми тегами,где цвет текста белый,я добавил ниже у item-1,7 белый цвет,но это получается цвет самого текста,а не заголовка:(*/
 .advantages-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
 }
 
-.advantages-card {
-  background-color: #82B3D3;
-}
-/* Не понял что делать с разными бекграунд колорами :(  и дальше добавил куча классов,мне кажется туфта*/
 .advantages-item-3,
 .advantages-item-5 {
   color: inherit;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-li.advantages-item-1,
-li.advantages-item-7 {
+.advantages-item-1,
+.advantages-item-7 {
   color: #ffffff;
+  background-color: #82B3D3;
 }
 
-li.advantages-item-4,
-li.advantages-item-8,
-li.advantages-item-10 {
+.advantages-item-4,
+.advantages-item-8,
+.advantages-item-10 {
   background-color: rgba(131, 179, 211, 0.20);
 }
 .advantages-item-9 {
@@ -160,6 +150,8 @@ li.advantages-item-10 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 4px;
 }
 
 .button-brown {
@@ -174,6 +166,7 @@ li.advantages-item-10 {
 .subscribe {
   color: #FFFFFF;
   background-image: url("../images/background-subscribe.jpg");
+  text-align: center;
 }
 
 .subscribe-form input {
@@ -186,11 +179,10 @@ line-height: 24px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
+
 }
 
 .subscribe-text {
-  text-align: center;
   font-size: 22px;
   line-height: 26px;
 }
@@ -212,8 +204,8 @@ line-height: 24px;
 .block-filter {
   background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
-  /* color: #FFFFFF  ; */
-  color: #000000;
+background-size: cover;
+  color: #FFFFFF  ;
 }
 
 .inner-header-title {
@@ -271,6 +263,16 @@ list-style: none;
 /* selection END */
 
 /* hotels START */
+.hotels-card {
+  border: 1px solid #E6E6E6;;
+}
+
+.button-card-size {
+  width: 140px;
+  height: 36px;
+  display: flex;
+}
+
 .hotels-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -280,6 +282,11 @@ list-style: none;
 
 .hotels-card-link {
   text-decoration: none;
+}
+
+.button-green {
+  background-color: #7DB54F;
+  border: none;
 }
 
 .hotels-card-type {
@@ -310,8 +317,14 @@ font-weight: 700;
 text-transform: uppercase;
 text-align: center;
 text-decoration: none;
+background-color: #82B3D3;
+color: #FFFFFF;
 }
 
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
 .pagination {
   list-style: none;
 }
