@@ -33,8 +33,18 @@
 
 /* font_add END */
 
+html {
+  height: 100%;
+  width: 1200px;
+}
+
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -44,12 +54,40 @@ body {
 
 
 /* header START */
-
-.navigation-list {
-  list-style: none;
+.index-header {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  padding: 0 70px;
+  height: 64px;
 }
 
+.logo {
+  width: 140px;
+  height: 70px;
+}
 
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu {
+  width: 339px;
+  justify-content: space-between;
+  padding: 20px 16px;
+
+}
+
+.navigation-user {
+  width: 268px;
+}
 
 .navigation-link,
 .navigation-user-link {
@@ -70,11 +108,14 @@ body {
 /* header END */
 
 /* main START */
+.main-container {
+  flex-grow: 1;
+}
 
 .main-intro {
   background:  url(../images/index-ladder.svg) bottom, url(../images/background-index.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100%, cover;
   height: 485px;
   text-align: center;
   color: #000000;
@@ -130,6 +171,19 @@ body {
 
 .advantages-list{
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.advantages-card {
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-img {
+  width: 800px;
+  height: 385px;
 }
 
 .advantages-title-description {
@@ -172,6 +226,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/background-subscribe.jpg");
   text-align: center;
+  height: 415px;
 }
 
 .subscribe-form input {
@@ -194,6 +249,22 @@ body {
 /* main END */
 
 /* footer START */
+.footer-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
+}
+
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.footer-social-item {
+  padding: 0 10px;
+}
+
 .footer-telephone {
   text-decoration: none;
   font-size: 40px;
