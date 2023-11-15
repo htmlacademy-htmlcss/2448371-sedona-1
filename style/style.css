@@ -136,6 +136,14 @@ body {
 }
 
 /* advantages START */
+.tagline-top {
+  height: 261px;
+}
+
+.tagline-bottom {
+  height: 246px;
+}
+
 .advantages-top {
   background-color: inherit;
 }
@@ -198,6 +206,7 @@ body {
 
 .find-hotels {
   text-align: center;
+  height: 406px;
 }
 
 .button {
