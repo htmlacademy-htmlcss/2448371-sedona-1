@@ -52,6 +52,18 @@ body {
   color: #000000;
 }
 
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
 
 /* header START */
 .index-header {
@@ -88,6 +100,7 @@ body {
 
 .navigation-user {
   width: 268px;
+  align-items: center;
 }
 
 .navigation-link,
@@ -105,6 +118,11 @@ body {
   border-bottom: 2px solid #756257;
   }
 
+.button-brown-user {
+  width: 160px;
+  height: 36px;
+  margin-left: 20px;
+}
 
 /* header END */
 
@@ -188,6 +206,10 @@ body {
 .advantages-card {
   width: 400px;
   height: 385px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .advantages-img {
@@ -218,6 +240,9 @@ body {
   font-family: "PT Sans", sans-serif;
   border-radius: 4px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-brown {
@@ -249,7 +274,6 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-
 }
 
 .subscribe-text {
@@ -261,16 +285,19 @@ body {
 /* footer START */
 .footer-page {
   display: flex;
-  justify-content: space-between;
   padding: 40px 70px 30px;
 }
 
 .footer-social {
   width: 180px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo {
   width: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -283,7 +310,30 @@ body {
   padding: 0 10px;
   width: 27px;
   height: 40px;
+  display: flex;
 }
+
+.icon-vk {
+  background-image: url('../images/icons/icon-vk.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.icon-youtube {
+  background-image: url('../images/icons/icon-youtube.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.icon-tg {
+  background-image: url('../images/icons/icon-telegram.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
 
 .footer-phone {
   margin-left: auto;
@@ -313,8 +363,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF  ;
+  height: 412px;
   padding-top: 35px;
   padding-bottom: 70px;
+
 }
 
 .inner-header-title {
@@ -398,6 +450,7 @@ body {
   display: flex;
   width: 1060px;
   margin: 50px 70px 40px;
+  align-items: center;
 }
 
 .number-hotels {
@@ -447,6 +500,7 @@ body {
   flex-wrap: wrap;
   width: 1060px;
   margin: 40px 70px;
+  justify-content: space-between;
 }
 
 .hotels-card {
@@ -456,6 +510,7 @@ body {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   /* margin-right: 20px; */
 }
 
@@ -490,7 +545,7 @@ body {
   line-height: 21px;
   width: 140px;
   margin: 0;
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .hotels-card-price {
@@ -529,7 +584,9 @@ margin-bottom: 16px;
 /* pagination START */
 .pagination {
   display: flex;
-  /* border-top: 2px solid #000000; сделать с помозью бордер или линию надо добавлять? */
+  padding-top: 40px;
+  margin-bottom: 60px;
+  border-top: 1px solid #E6E6E6;
 }
 
 .pagination-link {
@@ -547,12 +604,14 @@ margin-bottom: 16px;
   height: 60px;
   margin: 0 8px;
   background-color: #82B3D3;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .pagination-current {
-  color: #000000;
+  color: rgb(0, 0, 0);
   background-color: #F2F2F2;
 }
 .pagination-list {
@@ -578,10 +637,31 @@ margin-bottom: 16px;
 
 .subscribe-form {
   text-align: center;
+  display: flex;
 }
 
 .subscribe-input  {
   background-color: #F2F2F2;
+  width: 452px;
+  height: 52px;
+  padding: 0;
+  border: none;
 }
+
+.subscribe-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-subscribe {
+  width: 232px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
 /* pagination END */
 
