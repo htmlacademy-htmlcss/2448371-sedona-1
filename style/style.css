@@ -147,11 +147,27 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
+
+.tagline-title-find {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tagline-subtitle {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.tagline-subtitle-find {
+  margin-bottom: 54px;
+  width: 592px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* advantages START */
@@ -232,6 +248,23 @@ body {
   height: 406px;
 }
 
+.button-brown-find {
+  background-color: #756157;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 4px;
+  border: none;
+  width: 276px;
+  height: 36px;
+  padding: 8px 50px;
+}
+
+
 .button {
   color: #FFFFFF;
   text-decoration: none;
@@ -298,6 +331,7 @@ body {
   width: 120px;
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 .footer-social-list {
@@ -311,6 +345,7 @@ body {
   width: 27px;
   height: 40px;
   display: flex;
+
 }
 
 .icon-vk {
@@ -400,6 +435,7 @@ body {
 
 .catalog-filter {
   display: flex;
+  width: 1060px;
 }
 
 .catalog-filter-list {
@@ -427,7 +463,11 @@ body {
   line-height: 24px;
   border: none;
   padding: 0;
-  /* margin-right: 70px; что с ним делать */
+  margin-right: 70px;
+}
+
+.catalog-filter-group-type {
+  margin-right: auto;
 }
 
 .input-price {
@@ -436,6 +476,34 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+
+.button-blue-catalog {
+  background-color: #82B3D3;
+  margin-bottom: 32px;
+  width: 191px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.catalog-button {
+  border: none;
+  margin-left: 70px;
+  width: 191px;
+}
+
+.button-reset {
+  width: 191px;
+  height: 36px;
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 /* catalog END */
 
 /* selection START */

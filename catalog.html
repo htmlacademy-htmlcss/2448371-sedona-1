@@ -81,7 +81,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-type">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -106,12 +106,14 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, <span>₽:</span> </legend>
-              <label>от<input class="input-price" type="text" value="0"></label>
-              <label>до<input class="input-price" type="text" value="9000"></label>
+              <!-- <label>от<input class="input-price" type="text" value="0"></label>
+              <label>до<input class="input-price" type="text" value="9000"></label> -->
               <input type="range">
             </fieldset>
-            <button class="button button-blue" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+            <fieldset class="catalog-button">
+              <button class="button button-blue-catalog" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
+            </fieldset>
           </form>
         </section>
       </div>
@@ -243,16 +245,13 @@
   </main>
   <footer class="footer-page">
     <section class="footer-social">
-      <!-- <h2 class="visually-hidden">Соц-сети</h2> -->
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="https://vk.com/htmlacademy" class="social-icon icon-vk">
-            <!-- <span class="visually-hidden">Вконтакте</span> -->
           </a>
         </li>
         <li class="footer-social-item">
           <a href="https://t.me/htmlacademy " class="social-icon icon-tg">
-            <!-- <span class="visually-hidden">Телеграм</span> -->
           </a>
         </li>
         <li class="footer-social-item">
