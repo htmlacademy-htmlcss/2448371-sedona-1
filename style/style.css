@@ -36,7 +36,7 @@
 html {
   height: 100%;
   width: 1200px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 
@@ -353,10 +353,12 @@ body {
 
 .button-brown {
   background-color: #756157;
+  grid-area: button-2;
 }
 
 .button-blue {
   background-color: #82B3D3;
+  grid-area: button-1;
 }
 
 .button-green {
@@ -450,10 +452,6 @@ body {
 
 
 /* catalog START */
-.wrap {
-  width: 1060px;
-  margin: 0 70px;
-}
 
 .block-filter {
   background-image: url("../images/background-filter.jpg");
@@ -641,16 +639,24 @@ body {
 /* selection END */
 
 /* hotels START */
-.hotels {
+/* .hotels {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 1060px;
   padding: 0 70px;
   margin-bottom: 40px;
+} */
+
+.hotels {
+  width: 1060px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+  padding: 0 70px 40px;
 }
 
-.hotels-card {
+/* .hotels-card {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   width: 340px;
@@ -662,6 +668,23 @@ body {
   margin-bottom: 20px;
   margin-right: 20px;
   box-sizing: border-box;
+} */
+
+.hotels-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  /* width: 340px;
+  height: 438px; */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-areas:
+  "img img"
+  "title title"
+  "type price"
+  "button-1 button-2"
+  "stars rating";
+  gap: 16px;
 }
 
 .hotels-card:nth-child(3n) {
@@ -685,13 +708,17 @@ body {
   font-weight: 700;
   color: #000000;
   margin: 0 0 16px 0;
+  grid-area: title;
+  grid-column: 1 / 3;
 }
 
 .hotels-card-link {
   text-decoration: none;
 }
+
 .hotels-card-img {
   margin-bottom: 16px;
+  grid-area: img;
 }
 
 .hotels-card-type {
@@ -700,6 +727,7 @@ body {
   width: 140px;
   margin: 0;
   margin-bottom: 16px;
+  grid-area: type;
 }
 
 .hotels-card-price {
@@ -709,6 +737,7 @@ body {
   width: 140px;
   margin: 0;
   margin-bottom: 16px;
+  grid-area: price;
 }
 
 .hotels-card-rating {
@@ -719,6 +748,7 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
+  grid-area: stars;
 }
 
 .hotels-card-rating-text {
@@ -734,6 +764,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-area: rating;
 }
 
 /* hotels END */
@@ -742,7 +773,7 @@ body {
 .pagination {
   display: flex;
   padding-top: 40px;
-  margin-bottom: 60px;
+  margin: 0 70px 60px;
   border-top: 1px solid #E6E6E6;
 }
 
