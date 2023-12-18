@@ -544,6 +544,16 @@ display: flex;
   text-transform: uppercase;
   color: #000000;
 }
+
+.footer-telephone:hover {
+  color: #756157;
+}
+
+.footer-telephone:active {
+  color: #756157;
+  opacity: 30%;
+}
+
 /* footer END  */
 
 
