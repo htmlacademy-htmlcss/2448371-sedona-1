@@ -62,7 +62,6 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
-              <!-- Обернул input и span в label -->
               <li class="catalog-filter-item">
                 <label class="control" for="pool">
                   <input class="control-input visually-hidden" type="checkbox" id="pool" name="pool" checked>
@@ -77,11 +76,10 @@
                   <span>Парковка</span>
                 </label>
               </li>
-              <!-- label отдельно от input и span -->
               <li class="catalog-filter-item">
-                <input class="control-input visually-hidden" type="checkbox" id="wifi" name="wi-fi" >
-                <span class="control-mark"></span>
                 <label class="control" for="wifi">
+                  <input class="control-input visually-hidden" type="checkbox" id="wifi" name="wi-fi" >
+                  <span class="control-mark"></span>
                   Wi-Fi
                 </label>
               </li>
@@ -115,9 +113,22 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽: </legend>
-            <label>от<input class="input-price" type="text" value="0"></label>
-            <label>до<input class="input-price" type="text" value="9000"></label>
-            <input type="range">
+            <label class="label-price">
+              <span class="price-span">от</span>
+              <input class="input-price input-price-left" type="text" value="0">
+            </label>
+            <label class="label-price">
+              <span class="price-span">до</span>
+              <input class="input-price input-price-right" type="text" value="9000">
+            </label>
+            <div class="range-scale">
+              <span class="range-bar" style=" width: 226px;">
+                <span class="range-toggle toggle-min"></span>
+                <span class="range-toggle toggle-max"></span>
+              </span>
+
+            </div>
+            <input class="visually-hidden" type="range">
           </fieldset>
           <fieldset class="catalog-button">
             <button class="button button-blue button-blue-catalog" type="submit">Применить</button>
