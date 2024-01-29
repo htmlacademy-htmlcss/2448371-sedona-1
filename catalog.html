@@ -90,7 +90,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input visually-hidden" type="radio" value="hotel" name="house-option" checked>
+                  <input class="control-input visually-hidden" type="radio" value="hotel" name="house-option" required checked>
                   <span class="control-mark"></span>
                   <span>Гостиница</span>
                 </label>
@@ -113,21 +113,22 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽: </legend>
-            <label class="label-price">
-              <span class="price-span">от</span>
-              <input class="input-price input-price-left" type="text" value="0">
-            </label>
-            <label class="label-price">
-              <span class="price-span">до</span>
-              <input class="input-price input-price-right" type="text" value="9000">
-            </label>
+            <div class="label-price-wraper">
+              <label class="label-price">
+                <span class="price-span">от</span>
+                <input class="input-price input-price-left" type="text" value="0">
+              </label>
+              <label class="label-price">
+                <span class="price-span">до</span>
+                <input class="input-price input-price-right" type="text" value="9000">
+              </label>
+            </div>
             <div class="range-scale">
               <span class="range-bar" style=" width: 226px;">
-                <button class="range-toggle toggle-min"></button>
-                <button class="range-toggle toggle-max"></button>
+                <button class="range-toggle toggle-min"> <p class="visually-hidden">Минимальная цена</p></button>
+                <button class="range-toggle toggle-max"><p class="visually-hidden">Максимальная цена</p></button>
               </span>
             </div>
-            <input class="visually-hidden" type="range">
           </fieldset>
           <fieldset class="catalog-button">
             <button class="button button-blue button-blue-catalog" type="submit">Применить</button>

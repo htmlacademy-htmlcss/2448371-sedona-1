@@ -110,7 +110,7 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form  class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" >
+          <input class="subscribe-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required >
           <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
       </form>
     </section>
@@ -156,14 +156,20 @@
       <section class="modal-content">
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="date-form">
-            <span class="date-title">Дата заезда:</span>
-            <input class="date-input" type="date" id="date-in">
-            <label class="date" for="date-arrival">Мы не можем отправить вас в прошлое.</label>
+            <label class="date-title">Дата заезда:</label>
+            <div class="input-wraper">
+              <input class="date-input" type="text" id="date-in">
+              <button class="button-date"></button>
+              <p class="info-date error-date">Мы не можем отправить вас в прошлое.</p>
+            </div>
           </fieldset>
           <fieldset class="date-form">
-            <span class="date-title">Дата выезда:</span>
-            <input class="date-input" type="date" id="date-out">
-            <label class="date" for="date-out">На эти даты есть свободные номера. Пока есть.</label>
+            <label class="date-title">Дата выезда:</label>
+            <div class="input-wraper">
+              <input class="date-input" type="text" id="date-out">
+              <button class="button-date"></button>
+              <p class="info-date">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
           </fieldset>
         </form>
       </section>
