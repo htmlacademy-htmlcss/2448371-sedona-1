@@ -159,7 +159,9 @@
             <label class="date-title">Дата заезда:</label>
             <div class="input-wraper">
               <input class="date-input" type="text" id="date-in">
-              <button class="button-date"></button>
+              <button class="button-date">
+                <span class="visually-hidden">Календарь</span>
+              </button>
               <p class="info-date error-date">Мы не можем отправить вас в прошлое.</p>
             </div>
           </fieldset>
@@ -167,10 +169,45 @@
             <label class="date-title">Дата выезда:</label>
             <div class="input-wraper">
               <input class="date-input" type="text" id="date-out">
-              <button class="button-date"></button>
+              <button class="button-date">
+                <span class="visually-hidden">Календарь</span>
+              </button>
               <p class="info-date">На эти даты есть свободные номера. Пока есть.</p>
             </div>
           </fieldset>
+          <div class="wraper-people">
+            <fieldset class="people adults">
+              <label class="date-title">Взрослые:</label>
+              <div class="input-people-wraper">
+                <button class="people-min">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input class="people-number" type="text" placeholder="0">
+                <button class="people-max">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="people children">
+              <label class="date-title">Дети:
+                <button class="tooltip">
+                  <div class="tooltip-open">
+
+                  </div>
+                </button>
+              </label>
+              <div class="input-people-wraper">
+                <button class="people-min">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input class="people-number" type="text" placeholder="0">
+                <button class="people-max">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <button class="button-blue button-blue-find">Найти</button>
         </form>
       </section>
     </div>
