@@ -176,8 +176,8 @@
             </div>
           </fieldset>
           <div class="wraper-people">
-            <fieldset class="people adults">
-              <label class="date-title">Взрослые:</label>
+            <fieldset class="people">
+              <label class="date-title date-title-adults">Взрослые:</label>
               <div class="input-people-wraper">
                 <button class="people-min">
                   <span class="visually-hidden">Меньше</span>
@@ -188,14 +188,17 @@
                 </button>
               </div>
             </fieldset>
-            <fieldset class="people children">
-              <label class="date-title">Дети:
-                <button class="tooltip">
+            <fieldset class="people">
+              <div class="wraper-people-children">
+              <label class="date-title date-title-children">Дети:</label>
+              <button class="tooltip-button" type="button">
+                <svg width="2" height="12" viewBox="0 0 2 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                  </svg>
                   <div class="tooltip-open">
-
+                    <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                   </div>
-                </button>
-              </label>
+              </button>
               <div class="input-people-wraper">
                 <button class="people-min">
                   <span class="visually-hidden">Меньше</span>
@@ -205,6 +208,7 @@
                   <span class="visually-hidden">Больше</span>
                 </button>
               </div>
+            </div>
             </fieldset>
           </div>
           <button class="button-blue button-blue-find">Найти</button>
