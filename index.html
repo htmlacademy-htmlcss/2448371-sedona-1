@@ -110,7 +110,7 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form  class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required >
+          <input class="input subscribe-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required >
           <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
       </form>
     </section>
@@ -155,37 +155,37 @@
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
       <section class="modal-content">
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="date-form">
-            <label class="date-title" for="date-in">Дата заезда:</label>
-              <input class="date-input" type="text" id="date-in">
+          <fieldset class="date-form date-wrapper">
+            <label class="date-title date-labe-grid" for="date-in">Дата заезда:</label>
+              <input class="input date-input modal-input-grid" type="text" id="date-in" value="27 апреля 2020">
               <button class="button-date">
                 <span class="visually-hidden">Календарь</span>
               </button>
-            <p class="info-date error-date">Мы не можем отправить вас в прошлое.</p>
+            <p class="info-date error-date input-text-grid">Мы не можем отправить вас в прошлое.</p>
           </fieldset>
-          <fieldset class="date-form">
-            <label class="date-title" for="date-out">Дата выезда:</label>
-            <input class="date-input" type="text" id="date-out">
+          <fieldset class="date-form date-wrapper">
+            <label class="date-title date-labe-grid" for="date-out">Дата выезда:</label>
+            <input class="input date-input modal-input-grid" type="text" id="date-out" value="1 сентября 2021">
             <button class="button-date">
               <span class="visually-hidden">Календарь</span>
             </button>
-            <p class="info-date">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="info-date input-text-grid">На эти даты есть свободные номера. Пока есть.</p>
           </fieldset>
-          <div class="wraper-people">
+          <div class="people-wrapper">
             <fieldset class="people">
               <label class="date-title date-title-adults" for="adults-number">Взрослые:</label>
-              <div class="input-people-wraper">
+              <div class="input input-people-wrapper">
                 <button class="people-min">
                   <span class="visually-hidden">Меньше</span>
                 </button>
-                <input class="people-number" type="text" id="adults-number" placeholder="0">
+                <input class="input people-number" type="text" id="adults-number" placeholder="0" value="2">
                 <button class="people-max">
                   <span class="visually-hidden">Больше</span>
                 </button>
               </div>
             </fieldset>
             <fieldset class="people">
-              <div class="wraper-tooltip-button">
+              <div class="wrapper-tooltip-button">
               <label class="date-title date-title-children" for="children-number">Дети:</label>
               <button class="tooltip-button" type="button">
                 <svg width="2" height="12" viewBox="0 0 2 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -196,11 +196,11 @@
                 </div>
               </button>
               </div>
-              <div class="input-people-wraper">
+              <div class="input-people-wrapper">
                 <button class="people-min">
                   <span class="visually-hidden">Меньше</span>
                 </button>
-                <input class="people-number" id="children-number" type="text" placeholder="0">
+                <input class="input people-number" id="children-number" type="text" placeholder="0" value="2">
                 <button class="people-max">
                   <span class="visually-hidden">Больше</span>
                 </button>
