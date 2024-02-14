@@ -1596,7 +1596,7 @@ body {
 .modal-title {
   width: 480px;
   color: #000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1656,7 +1656,7 @@ body {
   width: 440px;
   height: 48px;
   color: #000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1890,7 +1890,7 @@ body {
   display: flex;
   margin: 0;
   text-align: left;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .tooltip-button:hover {
