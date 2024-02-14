@@ -37,6 +37,7 @@ html {
   height: 100%;
   width: 1200px;
   margin: 0 auto;
+  background-color: #F2F2F2;
 }
 
 
@@ -50,6 +51,8 @@ body {
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+
 }
 
 .visually-hidden {
@@ -88,7 +91,6 @@ body {
   flex-direction: row;
   padding: 0 70px;
   height: 64px;
-  /* убрать высоту потом */
 }
 
 .logo {
@@ -116,8 +118,6 @@ body {
   cursor: auto;
 }
 
-
-
 .navigation {
   display: flex;
   width: 100%;
@@ -131,7 +131,7 @@ body {
 }
 
 .navigation-menu {
-  width: 339px;
+  width: 465px;
   margin-right: auto;
   flex-wrap: wrap;
 }
@@ -171,7 +171,7 @@ body {
   cursor: auto;
 }
 
-.navigation-user-serch {
+.navigation-user-search {
   background-image: url("../images/icons/icon-find.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -192,7 +192,7 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 11px;
+  top: 1px;
   right: 4px;
   font-size: 10px;
   justify-content: center;
@@ -201,57 +201,71 @@ body {
 
 .navigation-user-link {
   color: inherit;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   text-decoration: none;
   display: block;
   padding: 22px 12px;
   width: 44px;
-  height: 64px;
   box-sizing: border-box;
 }
 
 .navigation-user-link:hover {
   opacity: 0.6;
- }
+}
 
  .navigation-user-link:focus {
   opacity: 0.6;
- }
+}
 
  .navigation-user-link:active {
   opacity: 0.4;
- }
+}
 
  .navigation-user-link:disabled {
    background-color: rgba(229, 229, 229, 1);
    color: rgba(229, 229, 229, 1);
    cursor: auto;
- }
+}
 
 
-.navigation-link-current{
+.navigation-link-current {
   position: relative;
-  }
+}
 
 .navigation-link-current::after {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: 0;
+  bottom: -1px;
   right: 16px;
   left: 16px;
   background-color: rgba(117, 98, 87, 1);
 }
 
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 4px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px 50px;
+}
+
+
 .button-brown-user {
   width: 160px;
-  height: 36px;
   margin-left: 20px;
-  padding: 0;
+  padding: 8px;
+  min-height: 36px;
 }
 
 /* header END */
@@ -269,6 +283,7 @@ body {
   background:  url(../images/index-ladder.svg) bottom, url(../images/background-index.jpg);
   background-repeat: no-repeat;
   background-size: 100%, cover;
+  background-color: #42575c;
   height: 485px;
   text-align: center;
   color: #000000;
@@ -284,7 +299,6 @@ body {
 
 .tagline-title-top {
   width: 650px;
-  padding-top: 69px;
   margin: 0;
   margin-bottom: 25px;
 }
@@ -292,8 +306,6 @@ body {
 .tagline-title-find {
   margin: 0;
   margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -306,24 +318,22 @@ body {
 
 .tagline-subtitle-top {
   margin: 0;
-  padding-bottom: 69px;
 }
 
 .tagline-subtitle-find {
-  margin-bottom: 54px;
+  margin: 0 0 54px 0;
   width: 592px;
   height: 52px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* advantages START */
 .tagline-top {
-  height: 261px;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
+  padding: 69px;
+  margin-bottom: 21px;
 }
 
 .tagline-bottom {
@@ -332,6 +342,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: auto;
+  padding: 64px;
 }
 
 .advantages-top {
@@ -340,7 +351,6 @@ body {
 
 .tagline-title-bottom {
   width: 505px;
-  padding-top: 64px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -348,7 +358,6 @@ body {
 .tagline-subtitle-bottom {
   width: 490px;
   margin: 0;
-  padding-bottom: 64px;
 }
 
 .advantages-title {
@@ -358,6 +367,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   position: relative;
+  margin: 0 0 30px 0;
 }
 
 .advantages-title::after {
@@ -370,7 +380,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  bottom: -25px;
+  bottom: -30px;
 }
 
 .advantages-item-1 .advantages-title::after,
@@ -462,7 +472,8 @@ body {
 }
 
 .advantages-img {
-display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .advantages-list{
@@ -486,7 +497,7 @@ display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 80px 85px;
+  padding: 103px 85px;
   box-sizing: border-box;
   min-height: 385px;
 }
@@ -494,12 +505,26 @@ display: flex;
 .advantages-title-description {
   font-size: 18px;
   text-align: center;
+  color: #333333;
+  margin: 30px 0 0 0;
 }
 
 .advantages-title-description-bottom {
   font-size: 18px;
   text-align: center;
   margin: 0;
+  color: #333333;
+}
+
+.advantages-item-8,
+.advantages-item-9,
+.advantages-item-10 {
+  padding: 80px 85px;
+}
+
+.advantages-item-1 .advantages-title-description,
+.advantages-item-7 .advantages-title-description {
+  color:#FFFFFF;
 }
 
 .advantages-bottom {
@@ -515,7 +540,7 @@ display: flex;
 }
 
 .button-brown-find {
-  background-color: #756157;
+  display: inline-flex;
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
@@ -528,21 +553,6 @@ display: flex;
   width: 276px;
   height: 36px;
   padding: 8px 50px;
-}
-
-
-.button {
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: "PT Sans", sans-serif;
-  border-radius: 4px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 }
 
 .button-brown {
@@ -581,6 +591,7 @@ display: flex;
 
 .hotels-card .button-green {
   grid-area: button-2;
+  margin-left: 4px;
 }
 
 .button-green {
@@ -613,7 +624,7 @@ display: flex;
   display: flex;
   padding: 40px 70px 30px;
   height: 50px;
-  min-height: 130px;
+  min-height: 120px;
   box-sizing: border-box;
 }
 
@@ -638,7 +649,7 @@ display: flex;
 }
 
 .footer-social {
-  width: 200px;
+  min-width: 150px;
   display: flex;
   align-items: center;
 }
@@ -704,16 +715,17 @@ display: flex;
 
 /* footer END  */
 
-
-
 /* catalog START */
 
 .block-filter {
   background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #775b50;
   color: #FFFFFF  ;
   padding: 35px 70px 70px;
+  min-height: 412px;
+  box-sizing: border-box;
 }
 
 .inner-header {
@@ -762,7 +774,7 @@ display: flex;
   position: relative;
   background-image: url("../images/graphic/arrow.svg");
   background-repeat: no-repeat;
-  padding-right: 10px;
+  margin-right: 17px;
   left: 5px;
   top: 0px;
   height: 11px;
@@ -773,10 +785,10 @@ display: flex;
   color: #FFFFFF ;
   text-decoration: none;
   font-size: 16px;
-  line-height: 21px;
   font-weight: normal;
   display: flex;
   align-items: center;
+  margin-right: 6px ;
 }
 
 .breadcrumbs-link:hover {
@@ -791,6 +803,7 @@ display: flex;
 .catalog-hotels{
   display: flex;
   flex-direction: row;
+  min-height: 160px;
 }
 
 .catalog-filter {
@@ -813,7 +826,7 @@ display: flex;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  padding-bottom: 32px;
+  padding: 0 0 32px 0;
 }
 
 .catalog-filter-item{
@@ -852,11 +865,11 @@ display: flex;
   font-size: 18px;
   font-weight: 700;
   box-sizing: border-box;
-  padding: 5px 10px;
+  padding: 12px 20px;
   outline: none;
   border: 2px solid transparent;
-  margin-bottom: 36px;
-  margin-right: 2px;
+  margin-bottom: 44px;
+  background-color: #F2F2F2;
 }
 
 .input-price:hover {
@@ -875,6 +888,7 @@ display: flex;
 
 .input-price-left {
   border-radius: 4px 0 0 4px;
+  margin-right: 2px;
 }
 
 .input-price-right {
@@ -927,7 +941,7 @@ display: flex;
 }
 
 .toggle-max {
-  right: -10px;
+  right: 0px;
   top: -8px;
 }
 
@@ -954,10 +968,14 @@ display: flex;
 }
 
 .catalog-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border: none;
   margin: 0;
   margin-left: 70px;
   width: 191px;
+  padding: 0;
 }
 
 .button-reset {
@@ -969,19 +987,27 @@ display: flex;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  font-style: normal;
   border-radius: 4px;
   cursor: pointer;
+  font-family: inherit;
+  text-transform: uppercase;
 }
 
 .control-mark {
   background-color: rgba(255, 255, 255, 1);
   width: 20px;
-  height: 20px;
+  height: 19px;
   display: inline-block;
   position: relative;
-  top: 0;
+  top: 2px;
+  align-self: flex-start;
   border-radius: 4px;
-  margin-right: 15px;
+  margin-right: 16px;
+}
+
+.control-span {
+  min-width: 150px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1085,9 +1111,9 @@ display: flex;
 
 .selection-tile {
   box-sizing: border-box;
-  background-image: url("../images/graphic/variant-tile.svg");
+  background-image: url("../images/graphic/View-icon.svg");
   background-repeat: no-repeat;
-  background-size: 24px 20px;
+  background-size: 16px 15px;
   background-position: center;
   width: 48px;
   height: 48px;
@@ -1095,9 +1121,9 @@ display: flex;
 }
 
 .selection-slide {
-  background-image: url("../images/graphic/variant-slideshow.svg");
+  background-image: url("../images/graphic/view-slideshow.svg");
   background-repeat: no-repeat;
-  background-size: 24px 20px;
+  background-size: 16px 15px;
   background-position: center;
   box-sizing: border-box;
   width: 48px;
@@ -1109,9 +1135,9 @@ display: flex;
 
 .selection-list {
   box-sizing: border-box;
-  background-image: url("../images/graphic/variant-list.svg");
+  background-image: url("../images/graphic/viev-list.svg");
   background-repeat: no-repeat;
-  background-size: 24px 20px;
+  background-size: 16px 15px;
   background-position: center;
   width: 48px;
   height: 48px;
@@ -1141,10 +1167,9 @@ display: flex;
   border: 2px solid #000000;
 }
 
-
-
 .select-control {
   font-size: 18px;
+  font-family: inherit;
   line-height: 21px;
   height: 49px;
   padding: 10px 20px;
@@ -1155,7 +1180,13 @@ display: flex;
   background-image: url("../images/graphic/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: transparent;
   appearance: none;
+  color: #333333;
+}
+
+.button-selection {
+  padding: 0;
 }
 
 .select-control:hover {
@@ -1170,6 +1201,7 @@ display: flex;
  border-color: rgba(0, 0, 0, 0.30);
  cursor: auto;
 }
+
 /* selection END */
 
 /* hotels START */
@@ -1178,15 +1210,14 @@ display: flex;
   width: 1060px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 17px;
   padding: 0 70px 40px;
 }
 
 .hotels-card {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  /* width: 340px;
-  height: 438px; */
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
@@ -1200,6 +1231,7 @@ display: flex;
 
 .hotels-card .button-blue {
   grid-area: button-2;
+  margin-left: 4px;
 }
 
 .hotels-card .button-brown {
@@ -1212,11 +1244,10 @@ display: flex;
 
 .button-card-size {
   width: 140px;
-  height: 36px;
-  display: flex;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  padding: 8px 0;
   text-align: center;
 }
 
@@ -1264,6 +1295,7 @@ display: flex;
   width: 140px;
   margin: 0;
   grid-area: type;
+  color: #333333;
 }
 
 .hotels-card-price {
@@ -1272,7 +1304,9 @@ display: flex;
   text-align: right;
   width: 140px;
   margin: 0;
+  padding-left: 4px;
   grid-area: price;
+  color: #333333;
 }
 
 .hotels-card-rating {
@@ -1295,11 +1329,11 @@ display: flex;
 }
 
 .hotel-star-3 {
-  width: 70px;
+  width: 66px;
 }
 
 .hotel-star-4 {
-  width: 85px;
+  width: 89px;
 }
 
 .hotel-star-5 {
@@ -1313,6 +1347,8 @@ display: flex;
   width: 140px;
   height: 37px;
   margin: 0;
+  padding: 9px 16px 8px 26px;
+  box-sizing: border-box;
   text-align: center;
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -1320,15 +1356,17 @@ display: flex;
   align-items: center;
   justify-content: center;
   grid-area: rating;
+  color: #333333;
 }
 
 /* hotels END */
 
 /* pagination START */
+
 .pagination {
   display: flex;
-  padding-top: 40px;
-  margin: 0 70px 60px;
+  padding-top: 35px;
+  margin: 3px 70px 60px;
   border-top: 1px solid #E6E6E6;
 }
 
@@ -1382,6 +1420,8 @@ display: flex;
 
 .pagination-more {
   background-color: #FFFFFF;
+  width: 60px;
+  height: 60px;
 }
 
 .pagination-current {
@@ -1403,6 +1443,7 @@ display: flex;
   color: #FFFFFF;
   background-image: url("../images/background-subscribe.jpg");
   text-align: center;
+  background-color: #3a6e9d;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1423,7 +1464,6 @@ display: flex;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  /* padding-top: 96px; */
   margin: 0;
   margin-bottom: 20px;
 }
@@ -1463,12 +1503,11 @@ display: flex;
   width: 452px;
   height: 52px;
   padding: 20px 12px;
-  border: none;
   box-sizing: border-box;
   font: inherit;
   outline: none;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #f2f2f2;
+  border: 6px solid transparent;
 }
 
 .subscribe-input:hover {
@@ -1485,19 +1524,11 @@ display: flex;
   outline: none;
 }
 
-.button-subscribe:disabled,
-.button-subscribe:disabled:hover {
-  color: #000;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  cursor: none;
-}
-
 .button-subscribe {
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 18px;
   font-weight: 700;
   border-radius: 0px 4px 4px 0px;
 }
@@ -1565,7 +1596,7 @@ display: flex;
 .modal-title {
   width: 480px;
   color: #000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1577,7 +1608,7 @@ display: flex;
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 23px;
 }
 
 .date-form {
@@ -1625,15 +1656,15 @@ display: flex;
   width: 440px;
   height: 48px;
   color: #000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   background-color: #F2F2F2;
-  padding: 12px 20px;
+  padding: 12px 19px;
   border-radius: 4px;
   box-sizing: border-box;
-  border: none;
+  border: 2px solid transparent;
   margin-bottom: 4px;
 }
 
@@ -1663,6 +1694,7 @@ display: flex;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  color: #333333;
 }
 
 .error-date {
@@ -1698,6 +1730,7 @@ display: flex;
 .people-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .date-title-adults {
@@ -1705,8 +1738,7 @@ display: flex;
 }
 
 .date-title-children {
-  margin-right: 10px;
-  margin-top: 0px;
+  margin-top: 3px;
 }
 
 .wrapper-tooltip-button {
@@ -1720,11 +1752,12 @@ display: flex;
   margin: 0;
   border: none;
   justify-content: end;
-  width: 247px;
+  min-width: 247px;
 }
 
 .input-people-wrapper {
   width: 110px;
+  height: 48px;
   display: flex;
   background-color: #F2F2F2 ;
   border-radius: 4px;
@@ -1766,11 +1799,21 @@ display: flex;
   height: 48px;
   background-color: #F2F2F2;
   border: none;
+  font-style: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   box-sizing: border-box;
   text-align: center;
+}
+
+.people-number:focus {
+  outline: 2px solid #83B3D3;
+}
+
+.people-number:active {
+  border: 2px solid #000;
+  outline: none;
 }
 
 .people-min:hover,
@@ -1802,8 +1845,9 @@ display: flex;
   background-color: #83B3D3;
   border-radius: 50%;
   border: none;
-  margin-right: 46px;
   position: relative;
+  margin-left: 7px;
+  margin-right: 47px;
 }
 
 .tooltip-icon {
@@ -1820,7 +1864,7 @@ display: flex;
   border-radius: 10px;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
   box-sizing: border-box;
-  left: -111px;
+  left: -115px;
   top: 40px;
   display: flex;
   align-items: center;
@@ -1832,7 +1876,7 @@ display: flex;
   background-image: url("../images/graphic/triangle.svg");
   position: absolute;
   top: -9px;
-  left: 115px;
+  left: 117px;
   height: 9px;
   width: 19px;
 }
@@ -1846,7 +1890,7 @@ display: flex;
   display: flex;
   margin: 0;
   text-align: left;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .tooltip-button:hover {
@@ -1872,5 +1916,6 @@ display: flex;
   text-transform: uppercase;
   color: #fff
 }
+
 /* modal window END */
 
