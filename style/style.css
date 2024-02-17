@@ -432,9 +432,7 @@ body {
   background-color: #82B3D3;
 }
 
-.advantages-item-4,
-.advantages-item-8,
-.advantages-item-10 {
+.advantages-item-4 {
   background-color: rgba(131, 179, 211, 0.20);
 }
 .advantages-item-9 {
@@ -458,6 +456,9 @@ body {
   margin: 0;
 }
 
+.advantages-card-bottom:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.20);
+}
 
 .advantages-card {
   display: flex;
